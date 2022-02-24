@@ -171,4 +171,11 @@ view: get_data_perakende_satis {
     type: count
     drill_fields: []
   }
+
+  measure: sum_tl {
+    type: sum
+
+    sql: ${perakende_satis_miktari} ;;
+    drill_fields: []
+  }
 }
