@@ -10,21 +10,35 @@ datagroup: lcw_test_default_datagroup {
 
 persist_with: lcw_test_default_datagroup
 
-explore: cube_cube_dim_islem {}
+explore: cube_cube_dim_islem {
+  hidden: yes
+}
 
-explore: cube_dim_saat {}
+explore: cube_dim_saat {
+  hidden: yes
+}
 
-explore: cube_dim_lflye_dahil_mi {}
+explore: cube_dim_lflye_dahil_mi {
+  hidden: yes
+}
 
-explore: cube_dim_doviz {}
+explore: cube_dim_doviz {
+  hidden: yes
+}
 
-explore: cube_dim_tarih {}
+explore: cube_dim_tarih {
+  hidden: yes
+}
 
-explore: cube_dim_urun {}
+explore: cube_dim_urun {
+  hidden: yes}
 
-explore: cube_dim_depo {}
+explore: cube_dim_depo {
+  hidden: yes
+}
 
 explore: get_data_perakende_satis {
+  hidden: yes
   join: cube_dim_urun {
     sql_on: ${get_data_perakende_satis.urun_ref}=${cube_dim_urun.urun_ref} ;;
     type: left_outer
@@ -33,4 +47,6 @@ explore: get_data_perakende_satis {
 
 }
 
-explore: get_data_stok {}
+explore: get_data_stok {
+  hidden: yes
+}
