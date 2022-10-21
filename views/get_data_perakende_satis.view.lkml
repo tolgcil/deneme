@@ -178,4 +178,11 @@ view: get_data_perakende_satis {
     sql: ${perakende_satis_miktari} ;;
     drill_fields: []
   }
+
+  measure: avg_tl {
+    type: average
+
+    sql: ${perakende_satis_miktari} ;;
+    drill_fields: []
+  }
 }
