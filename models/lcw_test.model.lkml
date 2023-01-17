@@ -38,7 +38,7 @@ explore: cube_dim_depo {
 }
 
 explore: get_data_perakende_satis {
-  hidden: yes
+
   join: cube_dim_urun {
     sql_on: ${get_data_perakende_satis.urun_ref}=${cube_dim_urun.urun_ref} ;;
     type: left_outer
